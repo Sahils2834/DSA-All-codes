@@ -2,17 +2,21 @@
 #Time complexity O(n)
 #space complexity O(1)
 
-def remove_duplicates(head):
-    curr = head
-    prev = None
-    if curr.prev == head:
-        curr.prev = None
-        head = curr
 
-    while curr is not None and curr.next is not None:
-        if curr.val == curr.next.val:
-            curr.prev.prev.next = curr
-            curr.prev = curr.prev.prev
-        else:
-            curr = curr.next
-    return head
+class Solution:
+    def removeDuplicates(self, head):
+        cur = head
+        
+        while cur:
+            if cur.prev and cur.prev.data == cur.data:
+                if cur.prev == head:
+                    cur.prev = None        # Remove backward link
+                    head = cur            # Update head to current node
+                else:
+                    # Remove the previous duplicate node by updating links
+                    cur.prev.prev.next = cur     # Connect prev's prev to current
+                    cur.prev = cur.prev.prev     # Connect current to prev's prev
+            
+            cur = cur.next  # Move to next node
+        
+        return head
