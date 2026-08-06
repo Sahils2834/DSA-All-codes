@@ -1,5 +1,9 @@
 # pyrefly: ignore [missing-import]
 #leetcode 2149- Rearrange Array Elements by Sign(Optimal solution)
+#algorithm = use a result array of size n; maintain two pointers: pos_ind=0, neg_ind=1
+#traverse the original array; if element >= 0, place at pos_ind and increment pos_ind by 2
+#if element < 0, place at neg_ind and increment neg_ind by 2
+#this directly places positives at even indices and negatives at odd indices in one pass
 # Time complexity- O(n)
 # Space complexity- O(n)
 

@@ -1,4 +1,8 @@
 #leetcode 128- Longest Consecutive Sequence(brute force solution)
+#algorithm = for each element, treat it as the start of a sequence
+#keep checking if num+1 exists in the array using the 'in' operator
+#count consecutive elements and update max_count
+#note: 'in' on a list is O(n) making this O(n^2) overall
 #time complexity- O(n^2)
 #space complexity- O(1)
 

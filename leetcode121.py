@@ -1,4 +1,8 @@
 #leetcode 121.
+#algorithm = track the minimum price seen so far while traversing
+#at each day, compute profit = current price - min_price seen so far
+#update max_profit if this profit is greater
+#single pass: update min_price before computing profit
 #timecomplexity: O(n)
 #spacecomplexity: O(1)
 #this will give max profit of stocks.

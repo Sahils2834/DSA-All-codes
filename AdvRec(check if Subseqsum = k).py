@@ -1,4 +1,9 @@
-#Advanced recurssion ---> to find number of subsequnce whose sum is target
+#Advanced recurssion --> to check if any subsequence whose sum equals target exists
+#algorithm = use pick/not-pick recursion; return True as soon as a valid subsequence is found
+#pick path: if it returns True, propagate True immediately (short-circuit)
+#not-pick path: try without the current element if pick returned False
+#prune: if total > target or index out of bounds, return False
+#base case: if total == target, return True
 #Tc --> O(2^n)
 #sc --> O(n)
 

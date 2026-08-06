@@ -1,4 +1,6 @@
 #Infix From Postfix
+#time complexity: O(n)
+#space complexity: O(n)
 
 #Algorithm:
 #1. Initialize an empty stack.

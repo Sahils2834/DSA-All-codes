@@ -1,4 +1,6 @@
 #Infix To Prefix
+#time complexity: O(n)
+#space complexity: O(n)
 
 #Algorithm:
 #1. Initialize an empty stack and an empty list for prefix expression.

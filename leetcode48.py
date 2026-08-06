@@ -1,4 +1,6 @@
 # leetcode 48-Rotate Image(optimal solution)
+# algorithm = transpose the matrix (swap matrix[i][j] with matrix[j][i])
+# then reverse each row of the transposed matrix
 # time complexity- O(n*n)
 # space complexity- O(1)
 

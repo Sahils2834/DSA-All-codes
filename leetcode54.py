@@ -1,4 +1,8 @@
 #leetcode 54-Spiral Matrix(optimal solution)
+#algorithm = use 4 boundary variables: top, bottom, left, right
+#traverse in a spiral order: left to right, top to bottom, right to left, bottom to top
+#after each directional traversal, update the respective boundary variable (e.g. top += 1)
+#ensure top <= bottom and left <= right before traversing right to left or bottom to top
 #time complexity- O(n*m)
 #space complexity- O(1)
 

@@ -1,4 +1,9 @@
 #leetcode 17 letter combiantion of phone numbers 
+#algorithm = map each digit to its letters (like a phone keypad)
+#use backtracking: at each index, iterate over all letters mapped to digits[index]
+#add the letter to subset and recurse to the next index
+#backtrack by popping the letter after the recursive call
+#base case: when index == len(digits), join subset and add to result
 #Tc=o(4^n)
 #sc=o(n)
 

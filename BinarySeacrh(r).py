@@ -1,4 +1,8 @@
 #binary search-recursive
+#algorithm = base case: if low > high, element not found, return -1
+#calculate mid; if target == arr[mid], return mid
+#if target > arr[mid], recursively search the right half
+#if target < arr[mid], recursively search the left half
 #time complexity: O(log2(n))
 #space complexity: O(1)
 

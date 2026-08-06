@@ -1,6 +1,9 @@
 #next greater element2 
-#algorithm = we need an empty stack and ans=array of size n initialized with -1 
-#also we need to take duplicate of our array by taking nums[i%n]
+#algorithm = use a monotonic stack and simulate a circular array by traversing twice (2*n)
+#use modulo operator (i % n) to access elements circularly
+#pop stack while top <= current element
+#only update the answer array during the first n iterations (i < n)
+#push the current element to the stack
 #time complexity = O(n)
 #space complexity = O(n)
 

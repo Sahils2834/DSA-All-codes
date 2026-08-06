@@ -1,4 +1,6 @@
 #leetcode 121.
+#algorithm = try every pair (i, j) where i < j; compute prices[j] - prices[i]
+#track the maximum profit across all pairs
 #timecomplexity: O(n^2)
 #spacecomplexity: O(1)
 #this will give max profit of stocks.(brute force solution)

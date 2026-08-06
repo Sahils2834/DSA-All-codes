@@ -1,4 +1,7 @@
 #leetcode 53.
+#algorithm = brute force: try every possible subarray using two nested loops
+#outer loop picks the starting index i, inner loop extends to j
+#keep a running total and update maxi for every subarray [i..j]
 #timecomplexity: O(n^2)
 #spacecomplexity: O(1)
 # this will give max sum of subarrays.(brute force solution)

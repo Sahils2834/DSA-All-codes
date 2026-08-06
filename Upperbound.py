@@ -1,4 +1,7 @@
 #upperbound
+#algorithm = use binary search to find the first element strictly greater than target
+#if nums[mid] > target, this might be the answer, so update lb = mid and search left (high = mid - 1)
+#if nums[mid] <= target, the answer must be in the right half, so search right (low = mid + 1)
 #time complexity: O(log2(n))
 #space complexity: O(1)
 #in this problem we find first element greater than target

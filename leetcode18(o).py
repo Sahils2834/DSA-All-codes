@@ -1,4 +1,7 @@
 #leetcode 18(Optimised)
+#algorithm = sort array, fix two elements (i and j), use two pointers (l and r) for remaining two
+#skip duplicate values for i, j, l, and r to avoid duplicate quadruplets
+#if sum == target, add to result; if sum < target, move l right; else move r left
 #time complexity:O(n^3)
 #space complexity:O(1)
 class Solution(object):

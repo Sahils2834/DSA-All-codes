@@ -1,5 +1,8 @@
 #Subset Sum Problem (Count Number of Subsets that sum up to a given target)
-
+#algorithm = use pick/not-pick recursion to generate all subsets
+#at each index, either include the element in the subset or skip it
+#when all elements are processed (index >= len), record the sum of the current subset
+#sort the result at the end as required by the problem
 #TCO - 3^n
 #TCO - O(n * Sum)
 

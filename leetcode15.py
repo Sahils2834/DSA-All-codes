@@ -1,4 +1,7 @@
 #leetcode 15 3sum(Brute Force Approach)
+#algorithm = try all possible triplets (i, j, k) using three nested loops
+#if nums[i]+nums[j]+nums[k] == 0, sort the triplet and add to result set
+#using a set for result avoids duplicate triplets
 #time complexity:O(n^3)
 #space complexity:O(n^2)
 def threeSum(nums):

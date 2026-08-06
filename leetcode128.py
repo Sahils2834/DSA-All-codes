@@ -1,4 +1,8 @@
 #leetcode 128- Longest Consecutive Sequence(optimal solution)
+#algorithm = add all numbers to a HashSet for O(1) lookups
+#for each number, only start counting if num-1 is NOT in the set (it's a sequence start)
+#from the start, keep incrementing and checking if next number exists in set
+#track the longest count found
 #time complexity- O(n)
 #space complexity- O(n)
 

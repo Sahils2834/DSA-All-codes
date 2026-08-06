@@ -1,4 +1,10 @@
-#Advanced recurssion ---> to find number of subsequnce whose sum is target
+#Advanced recurssion --> to count number of subsequences whose sum equals target
+#algorithm = use pick/not-pick recursion returning integer counts
+#pick: add nums[ind] to total, recurse and get count from pick path
+#not pick: keep total same, recurse and get count from not-pick path
+#return pick + notpick (total valid subsequences from this point)
+#base case: if total == target return 1 (found one valid subsequence)
+#prune: if total > target or index out of bounds, return 0
 #Tc --> O(2^n)
 #sc --> O(n)
 

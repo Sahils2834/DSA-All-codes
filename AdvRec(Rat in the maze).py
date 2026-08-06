@@ -1,4 +1,9 @@
 #rat in a maze
+#algorithm = use backtracking; start from (0,0) and try all 4 directions (D, L, R, U)
+#mark the current cell as visited before moving to prevent revisiting
+#if destination (n-1, n-1) is reached, add the path string to answer
+#backtrack by unmarking the cell as visited after exploring all directions
+#only move to a cell if it is within bounds, not visited, and has value 1 (passable)
 #time complexity= O(4^n*n)
 #space complexity= O(n)
 #using backtracking

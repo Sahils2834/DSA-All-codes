@@ -1,4 +1,10 @@
 #leetcode 51 n queens
+#algorithm = place one queen per column using backtracking
+#use three hash arrays: leftrow[], lowerD[], upperD[] for O(1) conflict checking
+#leftrow tracks occupied rows; lowerD and upperD track occupied diagonals
+#for each row in current column, if no conflict, place queen and mark all three arrays
+#recurse to next column; if col == n (all queens placed), add board to ans
+#backtrack: remove queen and unmark arrays before trying next row
 #tc=o(n!)
 #sc=o(n)
 

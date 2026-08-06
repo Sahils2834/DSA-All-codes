@@ -1,4 +1,8 @@
 #leetcode 81 Search in Rotated Sorted Array II
+#algorithm = modified binary search; handle duplicates by skipping them
+#if nums[low] == nums[mid] == nums[high], we can't determine sorted half, so shrink bounds
+#otherwise, at least one half is sorted; check which one and if target lies in it
+#adjust low/high accordingly
 #space O(1)
 #time O(log n)
 

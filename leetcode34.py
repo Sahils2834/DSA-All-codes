@@ -1,4 +1,8 @@
 #leetcode 34-find first and last position of element in sorted array
+#algorithm = use binary search twice to find the lower bound and upper bound
+#lower bound finds the first occurrence of the target (element >= target)
+#upper bound finds the first element strictly greater than target (element > target)
+#last occurrence will be upper bound - 1
 #time complexity: O(log2(n))
 #space complexity: O(1)
 

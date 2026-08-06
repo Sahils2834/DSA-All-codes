@@ -1,4 +1,7 @@
 #leetcode 2220 - Minimum Bit Flips to Convert Number
+#algorithm = XOR start and goal to get a number where set bits represent differing positions
+#then count the number of set bits (1s) in the XOR result using a loop and bit masking
+#each set bit in the XOR result corresponds to one flip needed
 #time complexity : O(log N)
 #space complexity : O(1)
 

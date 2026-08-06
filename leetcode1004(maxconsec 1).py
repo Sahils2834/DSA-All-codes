@@ -1,5 +1,8 @@
 #Leetcode 1004(max consec 1)
-#algorithm = we will use the concept of sliding window
+#algorithm = sliding window with left and right pointers
+#expand right pointer: if nums[right] == 0, increment zero count
+#if zero count > k, shrink window from left (if nums[left] == 0, decrement zeros), move left forward
+#update max window length whenever zeros <= k
 #time complexity = O(n)
 #space complexity = O(n)
 

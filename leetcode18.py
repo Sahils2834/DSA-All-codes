@@ -1,4 +1,6 @@
 #leetcode 18 4sum(Brute Force)
+#algorithm = four nested loops to generate all possible quadruplets
+#check if sum equals target, sort the quadruplet, add to a set to remove duplicates
 #time complexity:O(n^4)
 #space complexity:O(n^2)
 

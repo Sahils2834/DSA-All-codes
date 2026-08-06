@@ -1,4 +1,9 @@
 #leetcode 876 brute force method
+#algorithm = Approach 1: Store nodes in an array and return the middle one
+#Initialize an empty list to store the nodes.
+#Traverse the linked list and append each node to the list.
+#Calculate the middle index: length // 2.
+#Return the node at the middle index.
 #time = O(n)
 #space = O(n)
 

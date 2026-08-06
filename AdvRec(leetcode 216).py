@@ -1,4 +1,9 @@
 #leetcode 216 Combination Sum 3
+#algorithm = use backtracking; iterate from 'last' to 9 (digits 1-9, no repeat)
+#at each step add digit i to nums, recurse with updated sum and start = i+1
+#backtrack by popping the digit after recursion
+#base case: if sum == n and len(nums) == k, found a valid combination, add to ans
+#prune: if sum > n or len(nums) > k, stop exploring
 #TCO: O(2^n)
 #SCO: O(n)
 

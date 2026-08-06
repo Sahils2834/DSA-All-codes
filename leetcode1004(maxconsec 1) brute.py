@@ -1,5 +1,9 @@
 #Leetcode 1004(max consec 1)
-#algorithm = we will use the concept of sliding window
+#algorithm (brute) = use two nested loops; fix start i, extend j counting zeros
+#if zeros exceed k, break inner loop; otherwise track max window size
+#algorithm (optimal) = use sliding window with left and right pointers
+#expand right: count zeros; if zeros > k shrink from left (if left was 0, decrement zeros)
+#update max window size whenever zeros <= k
 #time complexity = O(n)
 #space complexity = O(n)
 

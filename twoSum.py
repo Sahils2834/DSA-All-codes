@@ -1,4 +1,8 @@
 #leetcode 1.
+#algorithm = use a hash map to store the elements and their indices
+#for each element, calculate the remaining value needed to reach the target
+#if the remaining value is in the hash map, return its index and the current index
+#otherwise, add the current element and its index to the hash map
 #timecomplexity:O(n)
 #spacecomplexity: O(n)
 #this will give the indices of two elements that add up to the target.

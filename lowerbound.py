@@ -1,4 +1,7 @@
 #lowerbound-finding first element in array that is greater than or equal to target
+#algorithm = use binary search to find the first element >= target
+#if arr[mid] >= target, this might be the answer, record it in ans and search left (high = mid - 1)
+#if arr[mid] < target, the answer must be in the right half, search right (low = mid + 1)
 #time complexity: O(log2(n))
 #space complexity: O(1)
 

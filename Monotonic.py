@@ -1,13 +1,14 @@
 #Next Greater Element
 
 #Algorithm:
-#1. Initialize an empty stack.
-#2. Iterate through each character of the array in reverse order:
-#       a.If the character is an operand (letter or digit), push it onto the stack.
-#       b.If the character is an operator, pop the top two operands from the stack.
-#       c.Create a new string by concatenating the operator, the first popped operand, and the second popped operand, enclosed in parentheses: (operator operand1 operand2).
-#       d.Push this new string back onto the stack.
-#3. After iterating through the expression, the stack will contain a single element which is the infix expression.
+#traverse the array from right to left using a monotonic stack
+#for each element, pop from the stack while the stack top is <= current element (not useful as next greater)
+#if stack is not empty after popping, top is the next greater element for current index
+#else next greater is -1 (no greater element to the right)
+#push current element to stack before moving to the next index
+#result is built right to left then returned
+#time complexity = O(n)
+#space complexity = O(n)
 #Example:
 #Input: 4,5,2,10
 #Output: 5,10,10,-1

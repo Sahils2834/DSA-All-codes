@@ -1,5 +1,7 @@
 #leetcode 2149- Rearrange Array Elements by Sign(brute-force)
 # You are given a 0-indexed integer array nums of even length 
+#algorithm = separate positives and negatives into two lists in one pass
+#then merge them back: place pos[i] at even index 2*i and neg[i] at odd index 2*i+1
 #Time complexity- O(n)
 #Space complexity- O(n)
 

@@ -1,4 +1,7 @@
 #leetcode 73- Set Matrix Zeroes(brute force solution)
+#algorithm = scan the matrix for zeros; for each zero found, mark all non-zero cells
+#in the same row and column with a sentinel value (infinity) to avoid double-zeroing
+#after marking, do a second pass to convert all sentinel values to 0
 #time complexity- O(n*m)
 #space complexity- O(n*m)
 

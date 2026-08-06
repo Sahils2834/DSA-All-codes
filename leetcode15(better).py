@@ -1,4 +1,7 @@
 #leetcode 15 3sum(Better Approach)
+#algorithm = fix two elements i and j; compute target = -(nums[i]+nums[j])
+#check if target exists in a set built so far in the inner loop
+#if found, sort the triplet and add to result set (set avoids duplicates)
 #time complexity:O(n^2)
 #space complexity:O(n)
 

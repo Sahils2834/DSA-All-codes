@@ -1,4 +1,8 @@
 #leetcode 73- Set Matrix Zeroes(optimal solution)
+#algorithm = use two tracker arrays: rowtrack[] and coltrack[]
+#in first pass, whenever matrix[i][j] == 0, mark rowtrack[i] = -1 and coltrack[j] = -1
+#in second pass, if rowtrack[i] == -1 or coltrack[j] == -1, set matrix[i][j] = 0
+#avoids in-place mutation during detection so no sentinel values needed
 #time complexity- O(n*m)
 #space complexity- O(1)
 

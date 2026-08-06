@@ -1,4 +1,8 @@
 #leetcode 15 3sum(Optimal Approach)
+#algorithm = sort the array; fix one element i and use two pointers j and k
+#j starts at i+1, k starts at end; compute sum = nums[i]+nums[j]+nums[k]
+#if sum < 0 move j right; if sum > 0 move k left; if sum == 0 add triplet and move both
+#skip duplicates for i, j, k to avoid repeating triplets
 #time complexity:O(n^2)
 #space complexity:O(1)
 

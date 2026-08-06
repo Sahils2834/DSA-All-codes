@@ -1,5 +1,7 @@
 #Leetcode 3(Longest substring without repeating characters)
-#algorithm = we will use the concept of sliding window
+#algorithm = sliding window with left and right pointers; use a hash map to store last seen index of characters
+#if char at right is in map, move left pointer to max(left, last_seen_index + 1)
+#update max length and char's index in map on each iteration
 #time complexity = O(n)
 #space complexity = O(n)
 

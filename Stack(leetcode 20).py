@@ -1,4 +1,9 @@
 #leetcode 20-valid parentheses
+#algorithm = use a stack and a hash map for matching pairs
+#if char is a closing bracket, check if stack is empty or top doesn't match; if so, invalid
+#otherwise, pop the matching opening bracket from stack
+#if char is an opening bracket, push to stack
+#valid if stack is empty at the end
 # Time complexity: O(n) 
 # Space complexity: O(n) 
 

@@ -1,4 +1,10 @@
-#Advanced recurssion ---> to find number of subsequnce whose sum is target
+#Advanced recurssion --> to find all subsequences whose sum equals target
+#algorithm = use pick/not-pick recursion with a running total
+#pick: add nums[ind] to subset and total, recurse to ind+1
+#not pick: remove element, restore total, recurse to ind+1
+#base case: if total == target, add subset copy to result (return)
+#prune: if total > target, return early (no need to explore further)
+#if index >= len(nums) and total != target, simply return
 #Tc --> O(2^n)
 #sc --> O(n)
 

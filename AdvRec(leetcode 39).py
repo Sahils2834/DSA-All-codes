@@ -1,5 +1,10 @@
 #leetcode 39
 #Combination Sum
+#algorithm = use backtracking; same element can be used multiple times
+#pick: include candidates[index], recurse at SAME index (allowing reuse), add to total
+#not pick: skip current, recurse to index+1
+#base case: if total == target, add subset copy to result
+#prune: if total > target or index >= len, return
 #tc: O(2^t) t is the target 
 #sc: O(t)
 

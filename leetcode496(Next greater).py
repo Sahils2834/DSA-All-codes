@@ -1,5 +1,8 @@
 #next greater element1
-#algorithm = we will use the concept of monotonic stack
+#algorithm = use a monotonic stack to find next greater element for nums2
+#traverse nums2 from right to left; pop stack while top <= current element
+#if stack is not empty, top is next greater, else -1; store in a hash map for O(1) lookup
+#finally, map each element in nums1 to its next greater using the hash map
 #time complexity = O(n)
 #space complexity = O(n)
 

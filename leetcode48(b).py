@@ -1,4 +1,6 @@
 #leetcode 48-Rotate Image(brute force)
+#algorithm = create a new result matrix of the same size
+#map each element matrix[i][j] to result[j][n-1-i]
 #time complexity- O(n*n)
 #space complexity- O(n*n)
 

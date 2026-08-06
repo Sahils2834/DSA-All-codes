@@ -1,4 +1,6 @@
 #Infix To Postfix
+#time complexity: O(n)
+#space complexity: O(n)
 #Algorithm:
 #1.Initialize an empty stack and an empty list for postfix expression.
 #2.Iterate through each character in the infix expression:
